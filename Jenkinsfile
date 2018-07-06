@@ -1,3 +1,4 @@
+@Library('pipeline-library')_
 pipeline {
   agent any
   stages {
@@ -5,6 +6,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Stage'
+        sayHello 'Avijit'
       }
     }
 
